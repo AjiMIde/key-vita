@@ -24,13 +24,19 @@ export default {
     VtProject,
     VtTechnology,
     VtEvaluation
+  },
+  mounted () {
+    window.app = this
   }
 }
 </script>
 
 <style lang="scss">
 @import "./views/home/font-awesome-4.7.0/scss/font-awesome";
-
+html, body {
+  width: 100%;
+  min-width: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,8 +44,11 @@ export default {
   text-align: center;
   color: #2c3e50;
 
-  max-width: 900px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
+
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -79,5 +88,11 @@ export default {
     margin: 0 6px 0 0;
     color: rgba(55,162,231, 1);
   }
+}
+
+code {
+  padding: 0 2px;
+  font-size: 16px;
+  color: $cl-main;
 }
 </style>

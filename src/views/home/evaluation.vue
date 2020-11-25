@@ -31,8 +31,9 @@ export default {
 <style lang="scss">
 .home-evaluation {
   .content {
+    padding: 0 20px 0 20px;
     text-align: left;
-    //word-break: break-all;
+    word-break: break-all;
   }
 }
 </style>

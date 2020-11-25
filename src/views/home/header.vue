@@ -5,12 +5,12 @@
       个人信息
     </div>
     <div class="vt-row">
-      <div class="vt-col-1">
+      <div class="avatar-div">
         <div class="avatar">
-          <img src="">
+          <img src="./assets/avatar.png">
         </div>
       </div>
-      <div class="vt-col-8 vt-row" style="padding: 0 0 0 30px">
+      <div class="vt-row header-detail">
         <div class="vt-w-25 ">
           <i class="fa fa-user"></i>
           <span>陈基涛</span>
@@ -24,8 +24,8 @@
           <span class="">1991.06</span>
         </div>
         <div class="vt-w-25 ">
-          <i class="fa fa-birthday-cake"></i>
-          <span class=""></span>
+          <i class="fa fa-envelope"></i>
+          <span class="">513900383@qq.com</span>
         </div>
         <div class="vt-w-25 ">
           <i class="fa fa-graduation-cap"></i>
@@ -55,13 +55,14 @@
 
 <style lang="scss">
 .home-header {
+  width: 100%;
   .vt-row {
     flex-wrap: wrap;
     i.fa {
       font-size: 18px;
-      width: 20px;
+      width: 24px;
       text-align: center;
-      margin-right: 8px;
+      margin-right: 18px;
       :before {
         vertical-align: middle;
       }
@@ -75,15 +76,43 @@
     }
   }
   .avatar {
-    width: 100px;
-    height: 100px;
+    width: 148px;
+    height: 148px;
     border-radius: 50%;
     background-color: #42b983;
+    overflow: hidden;
+    img {
+      margin-top: -10px;
+    }
+  }
+  .header-detail {
+    padding: 0 0 0 30px;
   }
   .label {
     width: 80px;
     &:after {
       content: ':'
+    }
+  }
+
+  @media all and (max-width: 500px) {
+    .avatar-div {
+      width: 100%;
+      margin-bottom: 30px;
+      .avatar {
+        margin: 0 auto;
+      }
+    }
+    .header-detail {
+      padding: 0 10px 0 10px;
+      i.fa {
+        font-size: 14px;
+        width: 20px;
+        margin-right: 8px;
+      }
+      .vt-w-25 {
+        font-size: 14px;
+      }
     }
   }
 }

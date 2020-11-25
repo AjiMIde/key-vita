@@ -6,9 +6,7 @@
     </div>
     <div class="home-tech-list">
       <ul>
-        <li v-for="(o, i) in list" :key="i">
-          {{ o }}
-        </li>
+        <li v-for="(o, i) in list" :key="i" v-html="o"></li>
       </ul>
     </div>
   </div>
@@ -34,6 +32,7 @@ export default {
 .home-technology {
   .home-tech-list {
     text-align: left;
+    padding: 0 20px 0 0;
     ul {
       li {
         text-align: left;

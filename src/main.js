@@ -8,6 +8,14 @@ import Data from './views/home/data/data.json'
 Vue.config.productionTip = false
 Vue.prototype.vitaData = Data
 
+const windowResize = () => {
+  if (window.document.body.clientWidth <= 500) {
+    Vue.prototype.isMobile = true
+  }
+}
+window.onresize = windowResize
+windowResize()
+
 new Vue({
   router,
   store,

@@ -46,6 +46,7 @@ export default {
 <style lang="scss">
 .home-project {
   .home-project-list {
+    padding: 0 10px 0 10px;
     .home-project-item {
       text-align: left;
       margin-bottom: 40px;
@@ -60,8 +61,10 @@ export default {
         }
         &-tech-key {
           color: $cl-main;
+          margin-bottom: 10px;
         }
         &-content1, &-content2 {
+          margin-bottom: 10px;
           code {
             padding: 0 2px;
             font-size: 16px;
