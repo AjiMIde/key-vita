@@ -8,14 +8,22 @@
       <div class="home-project-item" v-for="(o, i) in list" :key="i">
         <div class="proj-title">{{ o.title }}</div>
         <div class="proj-company-time">{{ o.companyTime }}</div>
-        <div class="proj-tech-key">{{ o.techKey }}</div>
-        <div class="proj-content1">
-          <span class="label">项目描述:</span>
+        <div class="proj-tech-key" v-if="false">{{ o.techKey }}</div>
+        <div class="proj-content">
+          <span class="label">背景:</span>
           <span v-html="o.content1"></span>
         </div>
         <div class="proj-content2">
-          <span class="label">职责描述:</span>
+          <span class="label">任务:</span>
           <span v-html="o.content2"></span>
+        </div>
+        <div class="proj-content2">
+          <span class="label">行动:</span>
+          <span v-html="o.content3"></span>
+        </div>
+        <div class="proj-content2">
+          <span class="label">结果:</span>
+          <span v-html="o.content4"></span>
         </div>
       </div>
     </div>
@@ -63,7 +71,8 @@ export default {
           color: $cl-main;
           margin-bottom: 10px;
         }
-        &-content1, &-content2 {
+
+        &-content, &-content1, &-content2 {
           margin-bottom: 10px;
           code {
             padding: 0 2px;
@@ -72,6 +81,10 @@ export default {
           }
           .label {
             font-weight: bold;
+          }
+
+          > span > div, li {
+            padding: 0 0 0 20px;
           }
         }
       }

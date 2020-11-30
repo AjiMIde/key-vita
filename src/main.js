@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import Data from './views/home/data/data.json'
+import Data from './views/home/data/data.js'
 
 Vue.config.productionTip = false
 Vue.prototype.vitaData = Data

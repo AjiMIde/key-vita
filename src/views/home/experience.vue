@@ -26,7 +26,7 @@
               <div class="value" v-html="o.role"></div>
             </div>
             <div class="vt-row" v-if="o.tech">
-              <div class="label">技术特点：</div>
+              <div class="label">使用技术：</div>
               <div class="value"><code>{{ o.tech }}</code></div>
             </div>
           </div>

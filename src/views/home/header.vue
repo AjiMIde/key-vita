@@ -10,7 +10,7 @@
           <img src="./assets/avatar.png">
         </div>
       </div>
-      <div class="vt-row header-detail">
+      <div class="vt-row vt-col-1 header-detail">
         <div class="vt-w-25 ">
           <i class="fa fa-user"></i>
           <span>陈基涛</span>

@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss">
 @import "./views/home/font-awesome-4.7.0/scss/font-awesome";
+
 html, body {
   width: 100%;
   min-width: 100%;
@@ -67,6 +68,7 @@ html, body {
 
 .vt-row {
   display: flex;
+  align-items: center;
   @for $i from 1 through 12
   {
     .vt-col-#{$i}
@@ -94,5 +96,6 @@ code {
   padding: 0 2px;
   font-size: 16px;
   color: $cl-main;
+  font-family: $font-ant-d;
 }
 </style>
